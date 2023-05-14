@@ -1,4 +1,4 @@
-CREATE TABLE STUDENTS(name TEXT, student_id INTEGER, major TEXT );
+/*CREATE TABLE STUDENTS(name TEXT, student_id INTEGER, major TEXT );
         ALTER TABLE STUDENTS
            ADD COLUMN GPA;
     --add gpa column 
@@ -67,7 +67,7 @@ CREATE TABLE SCHOOL( major TEXT , num_of_stud INTEGER, num_of_teachers INTEGER )
     INSERT INTO SCHOOL( major , num_of_stud , num_of_teachers )
         VALUES( 'Math', 2, 1);
     INSERT INTO SCHOOL( major , num_of_stud , num_of_teachers )
-    VALUES(    'Nursing School', 1, 12);
+    VALUES( 'Nursing School', 1, 12);
 
 ALTER TABLE SCHOOL  
    ADD COLUMN Avg INTEGER;
@@ -87,11 +87,10 @@ ALTER TABLE SCHOOL
             WHERE rowid = 4;
         
 
-
+*/
     
  
 SELECT * 
     FROM STUDENTS
-        JOIN SCHOOL
-            ON STUDENTS.major = SCHOOL.major;
+        CROSS JOIN SCHOOL;
 
