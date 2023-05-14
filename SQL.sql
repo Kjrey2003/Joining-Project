@@ -1,4 +1,4 @@
-/*CREATE TABLE STUDENTS(name TEXT, student_id INTEGER, major TEXT );
+CREATE TABLE STUDENTS(name TEXT, student_id INTEGER, major TEXT );
         ALTER TABLE STUDENTS
            ADD COLUMN GPA;
     --add gpa column 
@@ -87,7 +87,6 @@ ALTER TABLE SCHOOL
             WHERE rowid = 4;
         
 
-*/
     
  
 SELECT * 
